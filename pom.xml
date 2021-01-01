@@ -23,11 +23,11 @@
     <module>xml</module>
     <module>yaml</module>
   </modules>
-  <url>http://github.com/FasterXML/jackson-jaxrs-providers</url>    
+  <url>http://github.com/joschi/jackson-jaxrs-providers</url>    
   <scm>
-    <connection>scm:git:git@github.com:FasterXML/jackson-jaxrs-providers.git</connection>
-    <developerConnection>scm:git:git@github.com:FasterXML/jackson-jaxrs-providers.git</developerConnection>
-    <url>http://github.com/FasterXML/jackson-jaxrs-providers</url>    
+    <connection>scm:git:git@github.com:joschi/jackson-jaxrs-providers.git</connection>
+    <developerConnection>scm:git:git@github.com:joschi/jackson-jaxrs-providers.git</developerConnection>
+    <url>http://github.com/joschi/jackson-jaxrs-providers</url>
     <tag>HEAD</tag>
   </scm>
   <properties>
