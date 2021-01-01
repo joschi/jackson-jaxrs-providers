@@ -7,12 +7,12 @@
   <!-- do_not_remove: published-with-gradle-metadata -->
   <modelVersion>4.0.0</modelVersion> 
   <parent>
-    <groupId>com.fasterxml.jackson.jaxrs</groupId>
+    <groupId>com.github.joschi.jackson.jaxrs</groupId>
     <artifactId>jackson-jaxrs-providers</artifactId>
     <version>2.12.1-SNAPSHOT</version>
   </parent>
   <!-- note: different group id, it being datatype -->
-  <groupId>com.fasterxml.jackson.datatype</groupId>
+  <groupId>com.github.joschi.jackson.datatype</groupId>
   <artifactId>jackson-datatype-jaxrs</artifactId>
   <name>Jackson-JAXRS-Datatypes</name>
   <packaging>bundle</packaging>
@@ -101,11 +101,11 @@
               </artifactSet>
               <relocations>
                 <relocation>
-                  <pattern>javax.xml.bind</pattern>
+                  <pattern>jakarta.xml.bind</pattern>
                   <shadedPattern>jakarta.xml.bind</shadedPattern>
                 </relocation>
                 <relocation>
-                  <pattern>javax.ws.rs</pattern>
+                  <pattern>jakarta.ws.rs</pattern>
                   <shadedPattern>jakarta.ws.rs</shadedPattern>
                 </relocation>
               </relocations>

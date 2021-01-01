@@ -12,20 +12,14 @@ module com.fasterxml.jackson.jaxrs.json {
 
     requires com.fasterxml.jackson.jaxrs.base;
 
-    //oracle location
-    requires static javax.ws.rs.api;
-    //oracle location
-    requires static java.ws.rs;
-    //jakarta initial location - 2.x
-    requires static javax.ws.rs;
     //jakarta 3.x final location - https://github.com/jboss/jboss-jakarta-jaxrs-api_spec
     requires static jakarta.ws.rs;
     //jakarta 3.x final location - https://github.com/eclipse-ee4j/jaxrs-api
     requires static jakarta.ws.rs.api;
 
-    provides javax.ws.rs.ext.MessageBodyReader with
+    provides jakarta.ws.rs.ext.MessageBodyReader with
         com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider;
-    provides javax.ws.rs.ext.MessageBodyWriter with
+    provides jakarta.ws.rs.ext.MessageBodyWriter with
         com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider;
 
     //gedmarc - move to custom for jakarta shade

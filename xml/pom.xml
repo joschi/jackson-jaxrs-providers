@@ -7,7 +7,7 @@
   <!-- do_not_remove: published-with-gradle-metadata -->
   <modelVersion>4.0.0</modelVersion> 
   <parent>
-    <groupId>com.fasterxml.jackson.jaxrs</groupId>
+    <groupId>com.github.joschi.jackson.jaxrs</groupId>
     <artifactId>jackson-jaxrs-providers</artifactId>
     <version>2.12.1-SNAPSHOT</version>
   </parent>
@@ -20,14 +20,14 @@
   <properties>
     <!-- Generate PackageVersion.java into this directory. -->
     <packageVersion.dir>com/fasterxml/jackson/jaxrs/xml</packageVersion.dir>
-    <packageVersion.package>${project.groupId}.xml</packageVersion.package>
-    <osgi.export>${project.groupId}.xml.*;version=${project.version}</osgi.export>
+    <packageVersion.package>com.fasterxml.jackson.jaxrs.xml</packageVersion.package>
+    <osgi.export>com.fasterxml.jackson.jaxrs.xml.*;version=${project.version}</osgi.export>
     <!-- NOTE: JAXB annotations module is NOT optional for xml format:
 ,com.fasterxml.jackson.module.jaxb;resolution:=optional
       -->
-    <osgi.import>javax.ws.rs;version="${javax.ws.rs.version}"
-,javax.ws.rs.core;version="${javax.ws.rs.version}"
-,javax.ws.rs.ext;version="${javax.ws.rs.version}"
+    <osgi.import>jakarta.ws.rs;version="${jakarta.ws.rs.version}"
+,jakarta.ws.rs.core;version="${jakarta.ws.rs.version}"
+,jakarta.ws.rs.ext;version="${jakarta.ws.rs.version}"
 ,*
 </osgi.import>
   </properties>
@@ -68,7 +68,7 @@
       <version>6.2.3</version>
       <exclusions>
         <exclusion>
-          <groupId>javax.xml.stream</groupId>
+          <groupId>jakarta.xml.stream</groupId>
           <artifactId>stax-api</artifactId>
         </exclusion>
       </exclusions>

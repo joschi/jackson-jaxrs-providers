@@ -3,13 +3,13 @@ package com.fasterxml.jackson.jaxrs.json.dw;
 import java.io.IOException;
 import java.net.*;
 
-import javax.servlet.*;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.QueryParam;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.MultivaluedMap;
+import jakarta.servlet.*;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.QueryParam;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.MultivaluedMap;
 
 import org.eclipse.jetty.server.Server;
 
@@ -101,7 +101,7 @@ public abstract class WriteModificationsTestBase extends ResourceTestBase
         }
     }
 
-    public static class InjectingFilter implements javax.servlet.Filter
+    public static class InjectingFilter implements jakarta.servlet.Filter
     {
         @Override
         public void init(FilterConfig filterConfig) throws ServletException { }

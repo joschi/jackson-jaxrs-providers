@@ -81,8 +81,6 @@ In addition there are format-specific annotations that may be used:
 ## Module Considerations
 * The JSON/JAX-RS module has multiple names depending on the version in use. To enable modular usage, add the requires statement that pertains directly to the implementation you are using. 
 ```
-requires  javax.ws.rs.api; //Older libraries
-requires  java.ws.rs; //Newer libraries
 requires  jakarta.ws.rs; //Reserved name for Jakarta API
 requires  jakarta.ws.rs.api; //Reserved name for Jakarta Impl
 ```

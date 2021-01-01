@@ -55,7 +55,7 @@ No changes since 2.10.4
 
 2.10.1 (09-Nov-2019)
 
-#114: module-info.java references legacy javax.ws.rs.api
+#114: module-info.java references legacy jakarta.ws.rs.api
  (reported by Lukáš P)
 
 2.10.0 (26-Sep-2019)
@@ -118,7 +118,7 @@ No changes since 2.8.1
 
 #22: Remove `@Provider` annotation from `JsonParseExceptionMapper` and
   `JsonMappingExceptionMapper`
-#48: Support compact serialization of `javax.ws.rs.core.Link`, deserialization
+#48: Support compact serialization of `jakarta.ws.rs.core.Link`, deserialization
 #82: Upgrade JAX-RS dependency to 2.0
 #86: ContextResolver<ObjectMapper> must be called first when provided
  (requested by NicoNes@github)

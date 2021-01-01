@@ -3,10 +3,10 @@ package com.fasterxml.jackson.jaxrs.smile.dw;
 import java.util.HashSet;
 import java.util.Set;
 
-import javax.servlet.DispatcherType;
-import javax.servlet.Filter;
-import javax.servlet.Servlet;
-import javax.ws.rs.core.Application;
+import jakarta.servlet.DispatcherType;
+import jakarta.servlet.Filter;
+import jakarta.servlet.Servlet;
+import jakarta.ws.rs.core.Application;
 
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.handler.ContextHandlerCollection;
@@ -72,7 +72,7 @@ public abstract class ResourceTestBase extends JaxrsTestBase
         final ContextHandlerCollection contexts = new ContextHandlerCollection();
         server.setHandler(contexts);
         ServletHolder jaxrs = new ServletHolder(servletContainerClass());
-        jaxrs.setInitParameter("javax.ws.rs.Application", appClass.getName());
+        jaxrs.setInitParameter("jakarta.ws.rs.Application", appClass.getName());
         final ServletContextHandler mainHandler = new ServletContextHandler(contexts, "/", true, false);
         mainHandler.addServlet(jaxrs, "/*");
 

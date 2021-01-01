@@ -7,7 +7,7 @@
   <!-- do_not_remove: published-with-gradle-metadata -->
   <modelVersion>4.0.0</modelVersion> 
   <parent>
-    <groupId>com.fasterxml.jackson.jaxrs</groupId>
+    <groupId>com.github.joschi.jackson.jaxrs</groupId>
     <artifactId>jackson-jaxrs-providers</artifactId>
     <version>2.12.1-SNAPSHOT</version>
   </parent>
@@ -21,14 +21,14 @@ using standard Jackson data binding.
   <properties>
     <!-- Generate PackageVersion.java into this directory. -->
     <packageVersion.dir>com/fasterxml/jackson/jaxrs/yaml</packageVersion.dir>
-    <packageVersion.package>${project.groupId}.yaml</packageVersion.package>
-    <osgi.export>${project.groupId}.yaml.*;version=${project.version}</osgi.export>
+    <packageVersion.package>com.fasterxml.jackson.jaxrs.yaml</packageVersion.package>
+    <osgi.export>com.fasterxml.jackson.jaxrs.yaml.*;version=${project.version}</osgi.export>
     <!-- NOTE: JAXB annotations module is optional dependency, need to try to mark
          as such here.
       -->
-    <osgi.import>javax.ws.rs;version="${javax.ws.rs.version}"
-,javax.ws.rs.core;version="${javax.ws.rs.version}"
-,javax.ws.rs.ext;version="${javax.ws.rs.version}"
+    <osgi.import>jakarta.ws.rs;version="${jakarta.ws.rs.version}"
+,jakarta.ws.rs.core;version="${jakarta.ws.rs.version}"
+,jakarta.ws.rs.ext;version="${jakarta.ws.rs.version}"
 ,com.fasterxml.jackson.module.jaxb;resolution:=optional
 ,*
 </osgi.import>
@@ -54,13 +54,13 @@ using standard Jackson data binding.
 
     <!-- Use JSON and Smile providers for testing that content negotiation works with multiple providers registered. -->
     <dependency>
-      <groupId>com.fasterxml.jackson.jaxrs</groupId>
+      <groupId>${project.groupId}</groupId>
       <artifactId>jackson-jaxrs-json-provider</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.fasterxml.jackson.jaxrs</groupId>
+      <groupId>${project.groupId}</groupId>
       <artifactId>jackson-jaxrs-smile-provider</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>

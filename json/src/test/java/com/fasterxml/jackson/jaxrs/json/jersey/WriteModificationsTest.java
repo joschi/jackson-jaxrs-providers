@@ -1,6 +1,6 @@
 package com.fasterxml.jackson.jaxrs.json.jersey;
 
-import javax.servlet.Servlet;
+import jakarta.servlet.Servlet;
 
 import com.fasterxml.jackson.jaxrs.json.dw.WriteModificationsTestBase;
 
