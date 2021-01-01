@@ -56,7 +56,7 @@
       <artifactId>resteasy-jackson2-provider</artifactId>
       <!-- 15-Feb-2017, tatu: Alas, 3.0.20 compiled with Java 8, can't use
         -->
-      <version>3.0.17.Final</version>
+      <version>4.5.8.Final</version>
       <scope>test</scope>
       <exclusions>
         <exclusion>
