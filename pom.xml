@@ -38,7 +38,7 @@
 
     <!--  Need Jersey+Jetty for testing -->
     <version.jersey>3.0.0</version.jersey>
-    <version.jetty>11.0.0</version.jetty>
+    <version.jetty>11.0.5</version.jetty>
 
     <!-- Needed to enable jax-rs 2.0 usage under OSGi -->
     <jakarta.ws.rs.version>[3.0.0,4.0.0)</jakarta.ws.rs.version>
